@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= config[:title] %> - <%= current_page.data.title %></title>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+    <%= partial 'partials/navbar' %>
+    <%= yield %>
+    <%= partial 'partials/footer' %>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
