@@ -6,7 +6,7 @@
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 0.9rem;
 
-  &:hover {
+  &:hover, &.active {
     color: $primary;
   }
 }
