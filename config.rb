@@ -1,20 +1,17 @@
-set :title, "Starter Kit | Middleman + Ralix + Bootstrap"
+require 'terser'
 
+set :title, "Starter Kit | Middleman + Bootstrap"
+
+activate :sprockets
 activate :directory_indexes
-
-activate :external_pipeline,
-         name: :webpack,
-         command: build? ? 'yarn run build' : 'yarn run start',
-         source: 'dist',
-         latency: 1
 
 configure :development do
   activate :livereload
 end
 
 configure :build do
-  ignore File.join(config[:js_dir], '*') # handled by Webpack
-  activate :asset_hash
   activate :minify_css
+  activate :minify_javascript, compressor: Terser.new
+  activate :asset_hash
   activate :relative_assets
 end
