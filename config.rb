@@ -4,6 +4,7 @@ set :title, "Starter Kit | Middleman + Bootstrap"
 
 activate :sprockets
 activate :directory_indexes
+set :relative_links, true
 
 configure :development do
   activate :livereload
