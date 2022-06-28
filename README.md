@@ -30,7 +30,3 @@ Build the static files:
 ```
 > bin/build
 ```
-
-## Deploy 🚀
-
-This repository integrates a GitHub Action for building and deploying the generated site to GitHub Pages.
