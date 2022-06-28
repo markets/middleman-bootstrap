@@ -7,7 +7,7 @@ Powered by:
 - [Middleman](https://middlemanapp.com)
 - [Bootstrap v5](https://getbootstrap.com)
 
-## Install
+## Install 🔧
 
 Clone this repository (or use the GitHub *template* button), then `cd` into the folder and install all dependencies:
 
@@ -15,7 +15,7 @@ Clone this repository (or use the GitHub *template* button), then `cd` into the 
 > bin/setup
 ```
 
-## Run
+## Run 🏃
 
 Start a local development server:
 
@@ -23,10 +23,14 @@ Start a local development server:
 > bin/start
 ```
 
-## Build
+## Build 📦
 
 Build the static files:
 
 ```
 > bin/build
 ```
+
+## Deploy 🚀
+
+This repository integrates a GitHub Action for building and deploying the generated site to GitHub Pages.
