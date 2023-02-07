@@ -1,0 +1,10 @@
+.hero {
+  color: #fff;
+  padding-top: 12em;
+  padding-bottom: 10em;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%), image_url("hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
